@@ -1,0 +1,14 @@
+{
+  "2012":"https://diaad.s3.sa-east-1.amazonaws.com/sim/Mortalidade_Geral_2012.csv",
+  "2013":"https://diaad.s3.sa-east-1.amazonaws.com/sim/Mortalidade_Geral_2013.csv",
+  "2014":"https://diaad.s3.sa-east-1.amazonaws.com/sim/Mortalidade_Geral_2014.csv",
+  "2015":"https://diaad.s3.sa-east-1.amazonaws.com/sim/Mortalidade_Geral_2015.csv",
+  "2016":"https://diaad.s3.sa-east-1.amazonaws.com/sim/Mortalidade_Geral_2016.csv",
+  "2017":"https://diaad.s3.sa-east-1.amazonaws.com/sim/Mortalidade_Geral_2017.csv",
+  "2018":"https://diaad.s3.sa-east-1.amazonaws.com/sim/Mortalidade_Geral_2018.csv",
+  "2019":"https://diaad.s3.sa-east-1.amazonaws.com/sim/Mortalidade_Geral_2019.csv",
+  "2020":"https://diaad.s3.sa-east-1.amazonaws.com/sim/Mortalidade_Geral_2020.csv",
+  "2021":"https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SIM/Mortalidade_Geral_2021.csv",
+  "2022":"https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SIM/DO22OPEN.csv",
+  "2023":"https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SIM/DO23OPEN.csv"
+}

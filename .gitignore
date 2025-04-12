@@ -175,3 +175,6 @@ cython_debug/
 
 # PyCharm config folder
 .idea
+
+# temp folder (used during execution)
+temp

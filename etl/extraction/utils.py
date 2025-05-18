@@ -34,7 +34,7 @@ def make_temp_folder () -> None:
       - raw: raw data extracted from source
       - processed: processed data
     """
-    temp_folder = '../temp'
+    temp_folder = 'temp'
     if not os.path.exists(temp_folder):
         os.mkdir(temp_folder)
 

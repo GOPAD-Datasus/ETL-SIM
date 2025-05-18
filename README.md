@@ -1,4 +1,4 @@
-# ETL Project: SINASC
+# ETL Project: SIM
 
 A simple ETL (Extract, Transform, Load) pipeline to facilitate the use of
 [DataSUS](https://datasus.saude.gov.br/transferencia-de-arquivos/)'s SIM database.
@@ -14,7 +14,7 @@ are stored inside ``temp/processed``
 ## 🚀 Setup
 1. Clone the repo:
    ```bash
-   git clone https://github.com/GOPAD-Datasus/ETL-SINASC
+   git clone https://github.com/GOPAD-Datasus/ETL-SIM
    ```
 2. Install dependencies
    ```bash

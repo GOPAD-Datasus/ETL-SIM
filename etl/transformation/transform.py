@@ -1,7 +1,5 @@
-import pandas as pd
-
 from etl.extraction.utils import *
-from etl.transformation.utils import *
+from etl.transformation.general_handler import *
 from etl.transformation.year_specific import *
 
 
@@ -19,11 +17,6 @@ def transform (params: dict) -> None:
         if check_file_exists(output_file):
             continue
 
-        df = apply_year_specific_changes(input_file, year)
-
-        # General changes
-        df = remove_cols(df)
-        df = optimize_dtypes(df)
-
-        df.to_parquet(output_file,
-                      compression='gzip')
+        HandlerGeneral(
+            handle_year(input_file, year)
+        ).pipeline(output_file)

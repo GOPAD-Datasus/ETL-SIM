@@ -26,7 +26,9 @@ class Handler2015 (YearHandler):
                               sep=sep,
                               dtype=dtype)
 
-        self.remove_cols('ESTABDESCR')
+        self.remove_cols(['ESTABDESCR', 'CONTADOR',
+                          'CODIFICADO', 'STCODIFICA',
+                          'VERSAOSIST', 'VERSAOSIST'])
         self.parse_tp_nivel_inv()
 
         return self.df

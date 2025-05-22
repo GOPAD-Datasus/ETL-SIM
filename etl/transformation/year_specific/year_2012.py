@@ -9,7 +9,7 @@ class Handler2012 (YearHandler):
         target = 'HORANASC'
 
         self.df.loc[self.df[target] == '0800h', target] = '0800'
-        self.df[target] = self.df[target].astype(np.float32)
+
 
     def parse_circobito (self):
         target = 'CIRCOBITO'
@@ -18,9 +18,12 @@ class Handler2012 (YearHandler):
         self.df.loc[self.df[target] == 'C', target] = np.nan
         self.df[target] = self.df[target].astype(np.float32)
 
+
     def pipeline(self) -> pd.DataFrame:
         dtype = {
             'HORAOBITO': str,
+            'DTOBITO': str,
+            'DTNASC': str,
             'CIRCOBITO': str,
             'CAUSAMAT': str
         }
@@ -30,8 +33,9 @@ class Handler2012 (YearHandler):
                               dtype=dtype,
                               sep=sep)
 
-        self.remove_cols(['EXPDIFDATA', 'CONTADOR', 'NUDIASOBIN'])
+        self.add_cols(['CODMUNNATU'])
+        self.remove_cols(['EXPDIFDATA', 'CONTADOR',
+                          'NUDIASOBIN', 'CODMUNCART',
+                          'NUMREGCART', 'DTREGCART'])
 
         return self.df
-
-

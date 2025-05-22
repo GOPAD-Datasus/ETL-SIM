@@ -16,6 +16,10 @@ class Handler2013 (YearHandler):
                               sep=sep,
                               dtype=dtype)
 
-        self.remove_cols(['CONTADOR', 'NUDIASOBIN'])
+        self.add_cols(['ESCFALAGR1', 'CODMUNNATU',
+                       'ESCMAEAGR1'])
+        self.remove_cols(['CONTADOR', 'NUDIASOBIN',
+                          'CODMUNCART', 'NUMREGCART',
+                          'DTREGCART'])
 
         return self.df

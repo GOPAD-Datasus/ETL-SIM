@@ -26,6 +26,6 @@ class Handler2023 (YearHandler):
         self.parse_tp_nivel_inv()
         self.remove_cols(['contador','CODIFICADO',
                           'STCODIFICA', 'VERSAOSIST',
-                          'VERSAOSIST'])
+                          'VERSAOSIST', 'NUMEROLOTE'])
 
         return self.df

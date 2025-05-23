@@ -17,7 +17,10 @@ class Handler2013 (YearHandler):
                               dtype=dtype)
 
         self.add_cols(['ESCFALAGR1', 'CODMUNNATU',
-                       'ESCMAEAGR1'])
+                       'ESCMAEAGR1', 'CB_PRE',
+                       'ALTCAUSA', 'ATESTADO',
+                       'FONTES', 'TPNIVELINV',
+                       'TPRESGINFO'])
         self.remove_cols(['CONTADOR', 'NUDIASOBIN',
                           'CODMUNCART', 'NUMREGCART',
                           'DTREGCART'])

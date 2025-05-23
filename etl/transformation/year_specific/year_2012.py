@@ -33,7 +33,10 @@ class Handler2012 (YearHandler):
                               dtype=dtype,
                               sep=sep)
 
-        self.add_cols(['CODMUNNATU'])
+        self.add_cols(['CODMUNNATU', 'CB_PRE',
+                       'ALTCAUSA', 'ATESTADO',
+                       'FONTES', 'TPNIVELINV',
+                       'TPRESGINFO'])
         self.remove_cols(['EXPDIFDATA', 'CONTADOR',
                           'NUDIASOBIN', 'CODMUNCART',
                           'NUMREGCART', 'DTREGCART'])
